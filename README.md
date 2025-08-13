@@ -11,4 +11,14 @@
 
 ## Kaggle 資料集
 
-- Kaggle dataset：`<(https://www.kaggle.com/datasets/shengkai1020/handgesture-mmwave-v1-0?select=HandGesture-mmWave-v1.0)>`
+- Kaggle dataset：https://www.kaggle.com/datasets/shengkai1020/handgesture-mmwave-v1-0?select=HandGesture-mmWave-v1.0
+
+### 資料格式
+
+每個 `.h5` 檔至少包含：
+
+- `DS1`: 雷達特徵序列  
+  - 形狀： `(2, 32, 32, T)`  
+- `LABEL`: 長度 `T` 的 0/1（按住手勢=1、放開=0），`uint8`
+
+資料夾結構（依類別分資料夾；順序需與模型輸出一致：`["Background","PatPat","Wave","Come"]`，背景固定 index 0）：
