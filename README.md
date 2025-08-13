@@ -33,6 +33,7 @@
     - `patpat/` — `*.h5`
     - `wave/` — `*.h5`
     - `come/` — `*.h5`
+    - 
+### 安裝環境
 
-###安裝環境
-`.\setup.bat`
+- `.\setup.bat`
