@@ -21,8 +21,7 @@
   - 形狀： `(2, 32, 32, T)`  
 - `LABEL`: 長度 `T` 的 0/1（按住手勢=1、放開=0），`uint8`
 
-資料夾結構（依類別分資料夾；順序需與模型輸出一致：`["Background","PatPat","Wave","Come"]`，背景固定 index 0）：
-
+資料夾結構（依類別分資料夾；順序需與模型輸出一致：`["Background","PatPat","Wave","Come"]`：
 - `data/`
   - `train/`
     - `background/` — `*.h5`
@@ -35,5 +34,5 @@
     - `wave/` — `*.h5`
     - `come/` — `*.h5`
 
-安裝環境
-.\setup.bat
+###安裝環境
+`.\setup.bat`
