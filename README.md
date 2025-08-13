@@ -38,3 +38,26 @@
 ```
 .\setup.bat
 ```
+### 執行流程
+### A. 前處理
+將 .h5 轉為訓練用 .npz（輸出到 data/processed_data/）：
+```
+python .\src\data_preprocessing.py
+```
+### B. 檢視前處理結果（可選）
+互動檢視指定索引的 labels 與 ground_truths：
+```
+python .\src\read.py
+```
+### C. 訓練 3D CNN
+```
+python .\src\training.py
+```
+### D. 評估（混淆矩陣）
+```
+python .\src\confusion.py
+```
+### E. 線上即時推論（GUI）
+```
+python .\src\online_inference_gui.py
+```
