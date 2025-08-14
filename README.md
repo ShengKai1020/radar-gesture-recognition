@@ -65,7 +65,8 @@
 
 ```powershell
 .\setup.bat
-
+# torch 請依你的 CUDA/CPU 平台安裝（範例）
+# pip install torch --index-url https://download.pytorch.org/whl/cu121
 
 ### 執行流程
 ### A. 前處理
