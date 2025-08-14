@@ -37,10 +37,36 @@
     - `wave/` — `*.h5`
     - `come/` — `*.h5`
     - 
-### 安裝環境
-```
+---
+
+## Python 版本與環境
+
+- **建議使用 Python 3.8.9**（本專案以此版本測試最穩定）。
+- Windows 安裝步驟：
+  1. 下載並安裝 **Python 3.8.9**（安裝時勾選 *Add Python to PATH*）：<https://www.python.org/downloads/release/python-389/>
+  2. 確認版本：
+     ```powershell
+     python --version
+     ```
+  3. 建立並啟用虛擬環境：
+     ```powershell
+     py -3.8 -m venv venv
+     .\venv\Scripts\activate
+     ```
+     > 若 `python` 已指向 3.8.9，也可：
+     > ```powershell
+     > python -m venv venv
+     > .\venv\Scripts\activate
+     > ```
+
+---
+
+## 安裝環境
+
+```powershell
 .\setup.bat
-```
+
+
 ### 執行流程
 ### A. 前處理
 將 .h5 轉為訓練用 .npz（輸出到 data/processed_data/）：
